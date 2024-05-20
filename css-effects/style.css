@@ -1,5 +1,5 @@
 body { 
-
+    margin: 0; /* Remove the default margin */
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
@@ -18,6 +18,38 @@ img {
     height: auto;
 }
 
+
+#img-A {
+    filter: blur(15px);
+}
+
+#img-A:hover{
+    filter: none;
+    transition: all 2s ease-out;
+}
+
+.crop-container{
+    overflow: hidden;
+}
+
+#img-B {
+    filter: drop-shadow(16px 16px 20px orange);
+}
+
+#img-B:hover{
+    filter: none;
+    transition: all 2s ease-out;
+}
+
+#img-C{
+    filter: brightness(0.5);
+}
+
+#img-C:hover{
+    filter: none;
+    transition: all 2s ease-out;
+}
+
 #click-me {
     /* Centre the button */
     display: block;
@@ -31,4 +63,6 @@ img {
 
     font-size: 2em;
     font-weight: bold;
+
+    box-shadow: 6px 4px 2px red;
 }
